@@ -1,0 +1,118 @@
+export const toolDefinitions = [
+  // ---- LLMs ----
+  {
+    id: 'llm-llama33-70b',
+    name: 'Llama 3.3 (70B)',
+    category: 'llm',
+    description: 'Meta Llama 3.3 70B via Groq',
+    model: 'llama-3.3-70b-versatile',
+    icon: 'Brain',
+    defaultConfig: { temperature: 0.7, maxTokens: 1024, systemPrompt: 'You are a helpful assistant.' },
+  },
+  {
+    id: 'llm-llama31-8b',
+    name: 'Llama 3.1 (8B)',
+    category: 'llm',
+    description: 'Meta Llama 3.1 8B via Groq',
+    model: 'llama-3.1-8b-instant',
+    icon: 'Brain',
+    defaultConfig: { temperature: 0.7, maxTokens: 1024, systemPrompt: 'You are a helpful assistant.' },
+  },
+  {
+    id: 'llm-gemma2',
+    name: 'Gemma 2 (9B)',
+    category: 'llm',
+    description: 'Google Gemma 2 9B via Groq',
+    model: 'gemma2-9b-it',
+    icon: 'Zap',
+    defaultConfig: { temperature: 0.7, maxTokens: 1024, systemPrompt: 'You are a helpful assistant.' },
+  },
+  {
+    id: 'llm-compound',
+    name: 'Groq Compound',
+    category: 'llm',
+    description: 'Groq Compound AI system',
+    model: 'groq/compound',
+    icon: 'Sparkles',
+    defaultConfig: { temperature: 0.7, maxTokens: 1024, systemPrompt: 'You are a helpful assistant.' },
+  },
+  {
+    id: 'llm-gpt-oss-120b',
+    name: 'GPT-OSS (120B)',
+    category: 'llm',
+    description: 'OpenAI GPT-OSS 120B via Groq',
+    model: 'openai/gpt-oss-120b',
+    icon: 'Brain',
+    defaultConfig: { temperature: 0.7, maxTokens: 1024, systemPrompt: 'You are a helpful assistant.' },
+  },
+
+  // ---- Tools ----
+  {
+    id: 'tool-web-search',
+    name: 'Web Search',
+    category: 'tool',
+    description: 'Search the web via Tavily',
+    icon: 'Search',
+    defaultConfig: { maxResults: 5 },
+  },
+  {
+    id: 'tool-calculator',
+    name: 'Calculator',
+    category: 'tool',
+    description: 'Evaluate math expressions',
+    icon: 'Calculator',
+    defaultConfig: {},
+  },
+  {
+    id: 'tool-code-interpreter',
+    name: 'Code Interpreter',
+    category: 'tool',
+    description: 'Execute Python code',
+    icon: 'Code',
+    defaultConfig: {},
+  },
+  {
+    id: 'tool-api-call',
+    name: 'API Call',
+    category: 'tool',
+    description: 'Make HTTP API requests',
+    icon: 'Globe',
+    defaultConfig: { url: '', method: 'GET', headers: '{}' },
+  },
+  {
+    id: 'tool-wikipedia',
+    name: 'Wikipedia',
+    category: 'tool',
+    description: 'Search Wikipedia articles',
+    icon: 'BookOpen',
+    defaultConfig: { maxResults: 3 },
+  },
+
+  // ---- Flow ----
+  {
+    id: 'flow-input',
+    name: 'User Input',
+    category: 'flow',
+    description: 'Agent entry point',
+    icon: 'MessageSquare',
+    defaultConfig: { label: 'User Query' },
+  },
+  {
+    id: 'flow-output',
+    name: 'Agent Output',
+    category: 'flow',
+    description: 'Final response output',
+    icon: 'MessageCircle',
+    defaultConfig: { label: 'Response' },
+  },
+  {
+    id: 'flow-conditional',
+    name: 'Conditional Router',
+    category: 'flow',
+    description: 'Route based on conditions',
+    icon: 'GitBranch',
+    defaultConfig: { condition: '', trueLabel: 'Yes', falseLabel: 'No' },
+  },
+];
+
+export const getToolDef = (id) => toolDefinitions.find(t => t.id === id);

@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+langchain
+langgraph
+langchain-groq
+langchain-community
+python-dotenv
+pydantic
+duckduckgo-search
+numexpr
