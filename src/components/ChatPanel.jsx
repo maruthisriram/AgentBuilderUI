@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import { X, Send, Brain, Wrench, CheckCircle, Loader, Search, Calculator, Code, Globe, BookOpen } from 'lucide-react';
 import useFlowStore from '../store/useFlowStore';
 
-const BACKEND_URL = 'http://0.0.0.0:8000';
+const BACKEND_URL = 'https://agentbuilderui.onrender.com';
 
 const nodeIconMap = {
   llm: Brain,
