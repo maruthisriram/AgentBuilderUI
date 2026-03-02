@@ -1,13 +1,13 @@
 import React from 'react';
 import {
   Brain, Sparkles, Zap, Search, Calculator, Code, Globe,
-  BookOpen, MessageSquare, MessageCircle, GitBranch
+  BookOpen, MessageSquare, MessageCircle, GitBranch, FileUp
 } from 'lucide-react';
 import { toolDefinitions } from '../data/toolDefinitions';
 
 const iconMap = {
   Brain, Sparkles, Zap, Search, Calculator, Code, Globe,
-  BookOpen, MessageSquare, MessageCircle, GitBranch,
+  BookOpen, MessageSquare, MessageCircle, GitBranch, FileUp,
 };
 
 const categories = [

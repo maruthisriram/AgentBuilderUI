@@ -693,6 +693,148 @@ body {
   flex: 1;
 }
 
+/* ---- Knowledge Base Config ---- */
+.config-help-text {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.kb-upload-area {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kb-upload-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border: 2px dashed var(--border-active);
+  border-radius: var(--radius-md);
+  background: var(--bg-glass);
+  color: var(--color-tool);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.kb-upload-btn:hover {
+  background: var(--bg-glass-hover);
+  border-color: var(--color-tool);
+}
+
+.kb-upload-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.kb-status {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.kb-status.success {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--color-input);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.kb-status.error {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--color-danger);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.kb-file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kb-file-list label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.kb-file-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.kb-file-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.kb-file-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kb-file-meta {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.kb-file-remove {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast);
+}
+
+.kb-file-remove:hover {
+  color: var(--color-danger);
+}
+
+.kb-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 8px 10px;
+  background: var(--bg-glass);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.kb-id {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-family: 'Fira Code', monospace;
+}
+
 /* ---- Chat Panel ---- */
 .chat-overlay {
   position: fixed;

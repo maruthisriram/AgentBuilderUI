@@ -87,6 +87,14 @@ export const toolDefinitions = [
     icon: 'BookOpen',
     defaultConfig: { maxResults: 3 },
   },
+  {
+    id: 'tool-knowledge-base',
+    name: 'Knowledge Base',
+    category: 'tool',
+    description: 'Upload docs for RAG retrieval',
+    icon: 'FileUp',
+    defaultConfig: { kbId: null, files: [], chunkCount: 0 },
+  },
 
   // ---- Flow ----
   {

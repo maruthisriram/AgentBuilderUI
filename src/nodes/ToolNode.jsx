@@ -1,9 +1,9 @@
 import React from 'react';
 import { Handle, Position } from 'reactflow';
-import { Search, Calculator, Code, Globe, BookOpen, X } from 'lucide-react';
+import { Search, Calculator, Code, Globe, BookOpen, FileUp, X } from 'lucide-react';
 import useFlowStore from '../store/useFlowStore';
 
-const iconMap = { Search, Calculator, Code, Globe, BookOpen };
+const iconMap = { Search, Calculator, Code, Globe, BookOpen, FileUp };
 
 export default function ToolNode({ id, data, selected }) {
   const deleteNode = useFlowStore((s) => s.deleteNode);
